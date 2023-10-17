@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
 
-    <script src="script.js" defer></script>
+    <script src="./js/script.js" defer type="module"></script>
   </head>
   <body>
     <div class="container">
@@ -29,7 +29,7 @@
           </div>
 
           <div class="input-wrapper">
-            <label for="height">Altura (m)</label>
+            <label for="height">Altura (cm)</label>
             <input id="height" 
             type="text" 
             placeholder="165"/>
@@ -43,5 +43,26 @@
         </form>
       </main>
     </div>
+
+    <div class="alert-error">
+      Digite somente números
+    </div>
+
+
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title">
+         <span>
+           Seu IMC é de 28
+        </span>
+
+          <button class="close">
+            <img src="./assets/close.svg" alt="imagem para fechar o popup">
+          </button>
+
+        </h2>
+      </div>
+    </div>
+
   </body>
 </html>
