@@ -1,6 +1,6 @@
 import { Modal } from './modal.js'
 import { AlertError } from "./alert-error.js"
-import { IMC, notANumber } from "./utils.js"
+import { calculateIMC, notANumber } from "./utils.js"
 
 
 const form = document.querySelector('form')
@@ -29,7 +29,7 @@ form.onsubmit = event => {
     AlertError.close()
 
     const result = calculateIMC(weight, height)
-    displayResultMessage() 
+    displayResultMessage(result) 
 }
 
 function displayResultMessage(result) {
